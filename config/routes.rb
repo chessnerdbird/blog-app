@@ -7,4 +7,7 @@ get 'about' => 'page#about'
 
 resources :articles
 
+get 'signup' => 'users#new'
+resources :users, except: [:new]
+
 end
